@@ -1,3 +1,16 @@
+import { Dialog } from "./components/ui/dialog";
+import { CreateGoal } from "./components/create-goal";
+import { Summary } from "./components/summary";
+// import { EmptyGoals } from "./components/empty-goals";
+
 export function App() {
-	return <h1 className="text-5xl font-bold bg-black text-cyan-400">Hello world!</h1>;
+	return (
+		<Dialog>
+			{/* <EmptyGoals /> */}
+
+			<Summary/>
+
+			<CreateGoal />
+		</Dialog>
+	);
 }
